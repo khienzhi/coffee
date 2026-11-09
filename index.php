@@ -19,8 +19,8 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-	</div class="gapBetween">
-	<h2>A.) Basic Auto-scrolling</h2>
+	<div class="gapBetween">
+		<h2>A.) Basic Auto-scrolling</h2>
 	</div>
 	<div class="slider">
 		<div class="slides">
@@ -33,8 +33,8 @@
 			?>
 		</div><!--slides end-->
 	</div><!--slider end-->
-	</div class="gapBetween">
-	<h2>B.) Side menu</h2>
+	<div class="gapBetween">
+		<h2>B.) Side menu</h2>
 	</div>
 	<div class="slider2">
 		<div class="row">
@@ -57,8 +57,8 @@
 			</div>
 		</div><!--row-->
 	</div><!--slider2 end-->
-	</div class="gapBetween">
-	<h2>C.) Hidden Side Menu & Fade In/Out</h2>
+	<div class="gapBetween">
+		<h2>C.) Hidden Side Menu &amp; Fade In/Out</h2>
 	</div>
 	<div class="slider3">
 		<div class="slides3">
@@ -71,13 +71,6 @@
 		 ?>
 		</div><!--slides end-->
 	</div><!--slider end-->
-	</div class="gapBetween"></div>
 	<i class="icon-android"></i> icon-android
 	</body>
 </html>
-
-<?php
-
-
-
-?>
