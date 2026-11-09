@@ -1,0 +1,238 @@
+body{
+	width:100%;
+	margin: 0;
+	padding: 0px 20px;
+	display: relative;
+	justify-content: center;
+	align-items: center;
+	background: #151515;
+	overflow-x:hidden;
+	color:#eee;
+}
+
+.gapBetween{
+	margin-top:100px;
+	padding:20px;
+	height:100px;
+}
+.gapBetween h2{
+	color:white;
+}
+.slider{
+	display:absolute;
+	margin-right:auto;
+	margin-left:auto;
+	width:1024px;
+	border: 1px black solid;
+	overflow:hidden;
+}
+
+.slider3{
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+div[class^="slidePLlikeWithHideMenu"]{	 
+	position:absolute;
+	top:0;
+	left:0;
+
+}
+.slides{
+	width: 500%;
+	height:768px;
+	display: flex;
+}
+input[type="radio"]{
+	display: none;
+}
+input[type="checkbox"]{
+	display: none;
+}
+
+div[class^="slide"] {
+	transition: 1s;
+}
+
+.slides div[class^="slideBasic"] img{
+	margin-left:-1px;
+	width:1024px;
+	height:768px;
+}
+
+.navigation{
+	position: absolute;
+	width: 1024px;
+	margin-top: 728px;
+	display: flex;
+	justify-content: center;
+
+}
+.btn{
+	border: 2px solid white;
+	padding: 7px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.3s;
+
+}
+.btn:not(:last-child){
+	margin-right: 20px;
+}
+.cbbtn{
+	position:absolute;
+
+}
+
+.btn:hover{
+	background:lightgray;
+}
+
+#radioBasic1:checked ~.first{
+	margin-left: 0;
+}
+
+#radioBasic2:checked ~.first{
+	margin-left: -20%;
+}
+
+#radioBasic3:checked ~.first{
+	margin-left: -40%;
+}
+
+#radioBasic4:checked ~.first{
+	margin-left: -60%;
+}
+
+
+.navigation label[for^="radioBasic"]{
+	transition: 1s;
+}
+#radioBasic1:checked ~ .navigation label[for="radioBasic1"],
+#radioBasic2:checked ~ .navigation label[for="radioBasic2"],
+#radioBasic3:checked ~ .navigation label[for="radioBasic3"],
+#radioBasic4:checked ~ .navigation label[for="radioBasic4"]{
+	background: lightgray;	
+	transform: rotate(315deg);
+}
+
+#radioPLlike1:checked ~ .col-md-3 .navi2 label[for="radioPLlike1"],
+#radioPLlike2:checked ~ .col-md-3 .navi2 label[for="radioPLlike2"],
+#radioPLlike3:checked ~ .col-md-3 .navi2 label[for="radioPLlike3"],
+#radioPLlike4:checked ~ .col-md-3 .navi2 label[for="radioPLlike4"]{
+	background: #303030;
+	color: #ccc;
+}
+#radioPLlikeWithHideMenu1:checked ~ .navi3 label[for="radioPLlikeWithHideMenu1"],
+#radioPLlikeWithHideMenu2:checked ~ .navi3 label[for="radioPLlikeWithHideMenu2"],
+#radioPLlikeWithHideMenu3:checked ~ .navi3 label[for="radioPLlikeWithHideMenu3"],
+#radioPLlikeWithHideMenu4:checked ~ .navi3 label[for="radioPLlikeWithHideMenu4"]{
+	background-color: rgba(24, 24, 24, 0.8);
+	color: #ccc;
+}
+.itemIn{
+	width:90%;
+	padding:10px;
+}
+.itemIn .img{
+	width:10%;
+}
+
+.slides2 div[class^="slidePLlike"]{
+	width:20%;
+}
+.slider2 {
+	justify-content: center;
+	align-items: center;
+}
+.slider2 .row .col-md-9{
+	display:flex;
+	overflow:hidden;
+}
+.slides2 {
+	width:500%;
+ 	display:flex;
+}
+div[class^="slidePLlike"]{
+	opacity:0;
+}
+#radioPLlike1:checked ~ .col-md-9 .slides2 .first{
+	margin-left:0%;
+}
+
+#radioPLlike2:checked ~ .col-md-9 .slides2 .first{
+	margin-left:-20%;
+}
+
+#radioPLlike3:checked ~ .col-md-9 .slides2 .first{
+	margin-left:-40%;
+}
+
+#radioPLlike4:checked ~ .col-md-9 .slides2 .first{
+	margin-left:-60%;
+}
+#radioPLlike1:checked ~ .col-md-9 .slides2 .slidePLlike1,
+#radioPLlike2:checked ~ .col-md-9 .slides2 .slidePLlike2,
+#radioPLlike3:checked ~ .col-md-9 .slides2 .slidePLlike3,
+#radioPLlike4:checked ~ .col-md-9 .slides2 .slidePLlike4{
+	opacity:1;
+}
+#radioPLlikeWithHideMenu1:checked ~ .slidePLlikeWithHideMenu1,
+#radioPLlikeWithHideMenu2:checked ~ .slidePLlikeWithHideMenu2,
+#radioPLlikeWithHideMenu3:checked ~ .slidePLlikeWithHideMenu3,
+#radioPLlikeWithHideMenu4:checked ~ .slidePLlikeWithHideMenu4{
+	opacity:1;
+}
+
+.slides3{
+	width:100%;
+	overflow:hidden;
+}
+.navi3{
+	background-color:rgba(16, 16, 16, 0.6);
+	position:absolute;
+	left:102%;
+	transition:0.5s;
+}
+#checkboxPLlikeWithHideMenu:checked ~ .navi3{
+	left:70%;
+}
+label[for="checkboxPLlikeWithHideMenu"] span{
+	transition:0.5s;
+}
+label[for="checkboxPLlikeWithHideMenu"]{
+	background-color:#050505;
+	padding: 50px 25px;
+	position:absolute;
+	left:0px;
+	margin-left:-62px;
+}
+label[for="checkboxPLlikeWithHideMenu"]:hover{
+	color:#eee;
+}
+#checkboxPLlikeWithHideMenu:checked ~ .navi3 label[for="checkboxPLlikeWithHideMenu"] span{
+	transform: rotate(180deg);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+div[class^="slidePLlike"] img{
+	object-fit:cover;
+}
